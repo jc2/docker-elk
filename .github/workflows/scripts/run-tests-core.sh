@@ -49,7 +49,7 @@ declare -i was_retried=0
 
 # retry for max 10s (5*2s)
 for _ in $(seq 1 5); do
-	if echo 'dockerelk' | nc -q0 "$ip_ls" 5000; then
+	if echo 'dockerelk' | nc -q0 "$ip_ls" 5010; then
 		break
 	fi
 
